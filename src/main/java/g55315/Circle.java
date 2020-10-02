@@ -24,8 +24,7 @@ public class Circle extends ColoredShape{
     }
     
     boolean isInside(Point p) {
-        return Math.sqrt(((center.getX() - p.getX()) * (center.getX() - p.getX())) +
-                ((center.getY() - p.getY()) * (center.getY() - p.getY())) ) < radius;
+        return p.distanceTo(center) < radius;
     }
     
     void move(double dx, double dy) {

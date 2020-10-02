@@ -27,6 +27,11 @@ public class Point {
         return this;
     }
     
+    public double distanceTo(Point other) {
+        return Math.sqrt(((this.getX() - other.getX()) * (this.getX() - other.getX())) +
+                ((this.getY() - other.getY()) * (this.getY() - other.getY())) );
+    }
+    
     @Override
     public String toString() {
         return "("+x+", "+y+")";
