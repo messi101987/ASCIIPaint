@@ -10,5 +10,19 @@ package g55315;
  * @author g55315
  */
 public abstract class ColoredShape {
+    char color;
+    
+    public ColoredShape(char color) {
+       this.color = color;        
+    }
+
+    public char getColor() {
+        return color;
+    }
+
+    public void setColor(char color) {
+        this.color = color;
+    }
+    
     
 }

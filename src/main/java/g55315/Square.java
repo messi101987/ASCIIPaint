@@ -9,11 +9,10 @@ package g55315;
  *
  * @author g55315
  */
-public interface Shape {
-    boolean isInside(Point p);
+public class Square extends Rectangle {
     
-    void move(double dx, double dy);
-    
-    char getColor();
-    
+    public Square(Point upperLeft, double side, char color) {
+        super(upperLeft, side, side, color);
+    }
+ 
 }

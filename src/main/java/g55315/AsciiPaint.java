@@ -9,11 +9,6 @@ package g55315;
  *
  * @author g55315
  */
-public interface Shape {
-    boolean isInside(Point p);
-    
-    void move(double dx, double dy);
-    
-    char getColor();
+public class AsciiPaint {
     
 }
